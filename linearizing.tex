@@ -1,0 +1,32 @@
+\begin{frame}
+\frametitle{Linearizing $E = \sqrt{p^2 + m^2}$}
+Dirac approach was to attempt linearizing the relativistic energy-momentum equation
+\[
+E = \sqrt{p^2 + m^2} = \vv{\bm{\alpha}}\cdot \vv{\bm{P}} + \beta \cdot m = 
+\alpha_x p_x + \alpha_y p_y + \alpha_z p_z + \beta m
+\]
+Squaring both sides:
+
+\begin{align*}
+E^2 = p^2 + m^2 = & (\alpha_x p_x + \alpha_y p_y + \alpha_z p_z + \beta m) 
+(\alpha_x p_x + \alpha_y p_y + \alpha_z p_z + \beta m) \\
+%= & \alpha_x^2 p_x^2 + \alpha_y^2 p_y^2 + \alpha_z^2 p_z^2 + \beta^2 m^2 \\
+%+ & (\alpha_x \alpha_y + \alpha_y \alpha_x) p_x p_y \\
+%+ & (\alpha_x \alpha_z + \alpha_z \alpha_x) p_x p_z \\
+%+ & (\alpha_y \alpha_z + \alpha_y \alpha_y) p_y p_z \\
+%+ & (\alpha_x \beta + \beta \alpha_x) m p_x \\
+%+ & (\alpha_y \beta + \beta \alpha_y) m p_y \\
+%+ & (\alpha_z \beta + \beta \alpha_z) m p_z \\
+= & p_x^2 + p_y^2 + p_z^2 + m^2
+%
+\end{align*}
+The above equation can only be solved if the $\alpha_i, \beta$~are matrices of at least rank 4, which satisfy:
+ \begin{empheq}[box=\fbox]{align}
+  \{\alpha_i, \alpha_j\}&=0 \, \, ( i \neq j)\\ 
+\{\alpha_i, \beta\} & = 0 \nonumber
+\end{empheq}
+where:
+\[
+\{A, B\} = AB + BA
+\]
+\end{frame}

@@ -1,0 +1,47 @@
+\begin{frame}
+\frametitle{Constructing $\bf{\alpha}$~and $\bf{\beta}$~using Pauli matrices }
+%\begin{block}{}
+%Since the $\alpha, \beta$~do not commute, they cannot be numbers. \alert{They need to be matrices}. In fact, they are traceless hermitian ($A^\dagger = A$) matrices or rank greater or equal than four. 
+%\end{block}
+
+They $\alpha, \beta$ can be constructed in terms of the  Pauli matrices:
+\[
+\alpha_i = 
+\begin{pmatrix} 
+0 & \sigma_i \\
+\sigma_i & 0 
+\end{pmatrix} \, \, ,
+\beta = 
+\begin{pmatrix} 
+I & 0 \\
+0 & -I 
+\end{pmatrix} 
+\]
+
+where $I$~is the $2 \times 2$~ identity matrix, and the Pauli matrices are:
+\[
+\sigma_1 = 
+\begin{pmatrix} 
+0 & 1 \\
+1& 0 
+\end{pmatrix} \, \, ,
+\sigma_2 = 
+\begin{pmatrix} 
+0 & -i \\
+i & 0 \\ 
+\end{pmatrix} \, \, ,
+\sigma_3 = 
+\begin{pmatrix} 
+1 & 0 \\
+0 & -1 \\ 
+\end{pmatrix}
+\]
+
+Pauli matrices exhibit clearly the properties of being hermitian and traceless,
+$\sigma_i^\dagger = \sigma_i$, $Tr \sigma_i = 0$, and $\sigma_i^2 = I$. They satisfy the commutation relations: 
+\begin{empheq}[box=\fbox]{align}
+ %\begin{empheq}[box=\tcbhighmath]{align}
+\{\sigma_i, \sigma_j\}&=2 \delta_{ij} \, \, ( i,j,k = 1, 2, 3)\\
+[\sigma_i, \sigma_j] & = 2 i \epsilon_{ijk} \sigma_k \nonumber
+\end{empheq}
+\end{frame}

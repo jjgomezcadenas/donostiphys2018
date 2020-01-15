@@ -1,0 +1,53 @@
+\begin{frame}
+\frametitle{Rotation matrix}
+
+\includegraphics[scale=0.7]{rotation.png}
+The z-axis can be rotated to the direction of $\va{s}$~  by first rotating around the y-axis by $\theta$~ and then around the original z-axis (not the rotated one) by $\phi$~, where $(\theta,\phi)$~ are the polar angles of the direction $\va{s}$. 
+ \[
+ \va{s} = (s_x, s_y, s_z) = (\sin\theta\cos\phi, \sin\theta\sin\phi, \cos\theta).
+ \]
+
+The rotation matrix is then: 
+ \[
+ R(\theta, \phi) = e^{-i\frac{\phi}{2}\sigma_z} e^{-i\frac{\theta}{2}\sigma_y}
+ \]
+
+ \end{frame}
+ 
+ \begin{frame}
+\frametitle{Eigenvectors of spin in an arbitrary direction}
+
+ \begin{eqnarray*}
+ \chi_{+} &= & u(\theta, \phi) \mqty(1\\0) = \frac{1}{\sqrt{2(1 + s_z)}}\mqty(1 + s_z\\ s_{+})\\
+\chi_{-} &= & u(\theta, \phi) \mqty(0\\1) = \frac{1}{\sqrt{2(1 - s_z)}}\mqty( s_z - 1\\ s_{-})\\
+\end{eqnarray*}
+where
+\[
+s_{\pm} = s_x \pm i s_y
+\]
+The spin component in an arbitrary direction $\va{s}$~ is represented by the operator
+$\va{s} \cdot \va{\sigma}$~(in units of the absolute value of the spin, which is 1/2)
+ 
+ \begin{eqnarray*}
+\va{s} \cdot \va{\sigma} &= &s_x \mqty(0 & 1\\ 1 & 0) + s_y \mqty(0 & -i\\ i & 0) + s_z \mqty(1 & 0\\ 0 & -1) \\
+& = &  \mqty(s_z & s_x - i s_y\\ s_x + i s_y & -s_z) =
+  \mqty(s_z & s_{-}\\ s_{+} &  -s_z) 
+\end{eqnarray*}
+ \end{frame}
+ 
+ 
+  \begin{frame}
+\frametitle{Projection operators}
+
+Using the fact that $\va{s} \cdot \va{\sigma}$~has eigenvalues $\pm 1$, we can construct
+projection operators which project out $\chi_{\pm}$ from any vector:
+
+\[
+P_{\pm} = \frac{1 \pm \va{s} \cdot \va{\sigma}}{2}
+\]
+Writing any vector $v$~as a linear combination of $\chi_{\pm}$, $v = c_{+}\chi_{+} + c_{-}\chi_{-}$, we can see that $P_{\pm}$~projects out $\chi_{\pm}$~out of $v$
+\[
+P_{+} v = c_{+} \chi_{+}, \,\,\, P_{-} v = c_{-} \chi_{-}
+\]
+
+ \end{frame}

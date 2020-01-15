@@ -1,0 +1,59 @@
+\begin{frame}
+\frametitle{The Dirac equation }
+using the linearized equation
+\[
+E  -\va{\alpha}\cdot \va{P} - \beta \cdot m = 0
+\]
+and substituting operators
+\[
+E \rightarrow i \frac{\partial}{\partial_t}, \,\, \va{P} \rightarrow -i \va{\nabla}
+\]
+One obtains the Dirac equation
+\[
+ i \frac{\partial}{\partial_t} \psi = [ \va{\alpha} (-i\va{\nabla}) + m] \psi
+\]
+
+Multiply now $\beta$~from the left and define  the gamma matrices:
+\[
+ \gamma^0 = \beta = \begin{pmatrix} 
+I & 0 \\
+0 & -I 
+\end{pmatrix}  \,\,\, ,  \gamma^i = \beta \alpha_i = \begin{pmatrix} 
+0 & \sigma_i \\
+-\sigma_i & 0 
+\end{pmatrix} 
+\]
+To obtain 
+%
+%\begin{empheq}[box=\fbox]{align}
+%(E \gamma^0 -\va{p}\cdot \va{\gamma} -m ) \psi & = 0 \nonumber
+%\end{empheq}
+%\[
+%[i(\gamma^0 \partial_0 + \gamma^i \partial_i) -m ] \psi  = 0
+%\]
+%or
+ \begin{empheq}[box=\fbox]{align}
+(i \gamma^\mu \partial_\mu -m ) \psi & = 0 \nonumber
+\end{empheq}
+\end{frame}
+
+%\begin{frame}
+%Alternatively, in terms of the energy and momentum operators:
+%\begin{empheq}[box=\fbox]{align}
+%(E \gamma^0 -\va{p}\cdot \va{\gamma} -m ) \psi & = 0 \nonumber
+%\end{empheq}
+%
+%In this equation $\psi$~is the Dirac bispinor: 
+%\[
+%\psi = \mqty(\psi_1 \\ \psi_2 \\ \psi_3 \\ \psi_4) =  \mqty(\phi \\ \chi); \,\,\,
+%\phi =  \mqty(\phi_1 \\ \phi_2), \,\,\, \chi =  \mqty(\chi_1 \\ \chi_2)
+%\]
+%The two spinors $\phi$~and $\chi$~represent the particle and the antiparticle; the two components of each of them represent the two states of the third component of the spin, $s_z = +1/2$~and
+%$s_z = -1/2$.
+%
+%The four $\gamma$~matrices, found before, are not unique. Any set that satisfy the anticommutation relations (Clifford algebra) can be used:
+%
+%\begin{empheq}[box=\fbox]{align}
+%\{\gamma^\mu, \gamma^\nu\} = 2 g^{\mu\nu} \nonumber
+%\end{empheq}
+%\end{frame}

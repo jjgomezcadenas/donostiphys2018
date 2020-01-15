@@ -1,0 +1,52 @@
+\begin{frame}
+\frametitle{What do we talk about when we talk about spin? Spin in the Dirac equation}
+
+We can represent rotations in spinor space through the corresponding representation of the Lorentz group: 
+ \[
+ U(\va{\theta}) = e ^{-i \theta_i\frac{\Sigma_i}{2}}
+ \]
+where $\Sigma_i$~can be constructed in terms of the Pauli matrices:
+ \[
+ \Sigma_i = \mqty(\sigma_i & 0\\ 0 & \sigma_i)
+ \]
+We can now write the Dirac equation in terms of the Hamiltonian: 
+\[
+i \pdv{t} \psi = H \psi, \,\,\, H = \va{\alpha} \cdot \va{p} + \beta m
+\]
+%\end{frame}
+and enquire if the angular momentum L commutes with H (ergo a constant of motion). Write:
+\begin{eqnarray*}
+L_i &= &(\va{x} \times \va{p})_i = \epsilon_{ijk} x^j p^k \\
+H & = & \alpha_i p^i + \beta m = \gamma^0(\gamma^i p^i + m) 
+\end{eqnarray*}
+\end{frame}
+\begin{frame}
+then we find that: 
+\[
+[L_i, H] = [\epsilon_{ijk} x^j p^k,  \gamma^0(\gamma^l p^l + m] = i (\va{\alpha} \times \va{p})_i
+\]
+\[
+[\Sigma_i, H] = [i \gamma^j \gamma^k,  \gamma^0(\gamma^l p^l + m] =-2i (\va{\alpha} \times \va{p})_i
+\]
+And thus, neither $L$, nor $\Sigma$~are constants of motion. Instead we find that:
+
+\[
+[\va{J}, H] = 0, \,\,\, \va{J} = \va{L} + \frac{\va{\Sigma}}{2}
+\]
+
+\begin{alertblock}{The Dirac equation describes the spin of the electron}
+The angular momentum in the Dirac equation is conserved only when the spin is added to the orbital momentum. 
+\end{alertblock} 
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Is Spin real?}
+\begin{block}{}
+\begin{itemize}
+\item \alert{Yes}. We need spin to explain Stern-Gerlach. In fact we could define spin as the stuff that results in the Stern-Gerlach experiment behavior.
+\item \alert{Yes}. Spin emerges out of the Dirac equation which describes the electron (and the neutrino) as spin 1/2 particle. 
+\item Spin is a pure quantum effect without a classical counterpart. The rotating sphere used to pictorially describe it is just a (perhaps confusing) metaphor. 
+\end{itemize}
+\end{block}
+\end{frame}

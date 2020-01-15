@@ -1,0 +1,77 @@
+\begin{frame}
+\frametitle{The Dirac equation }
+The Dirac equation can also be written as: 
+
+ \begin{empheq}[box=\tcbhighmath]{align}
+(E \gamma^0 -\va{p}\cdot \va{\gamma} -m ) \psi & = 0
+\end{empheq}
+
+In this equation $\psi$~is the Dirac bispinor: 
+\[
+\psi = \mqty(\psi_1 \\ \psi_2 \\ \psi_3 \\ \psi_4) =  \mqty(\phi \\ \chi); \,\,\,
+\phi =  \mqty(\phi_1 \\ \phi_2), \,\,\, \chi =  \mqty(\chi_1 \\ \chi_2)
+\]
+The two spinors $\phi$~and $\chi$~represent the particle and the antiparticle; the two components of each of them represent the two states of the third component of the spin, $s_z = +1/2$~and
+$s_z = -1/2$.
+
+The four $\gamma$~matrices, found before, are not unique. Any set that satisfy the anticommutation relations (Clifford algebra) can be used:
+
+ \begin{empheq}[box=\tcbhighmath]{align}
+\{\gamma^\mu, \gamma^\nu\} = 2 g^{\mu\nu}
+\end{empheq}
+
+\end{frame}
+
+%\begin{frame}
+%\frametitle{The Dirac representation of the $\gamma$~matrices} 
+%
+%\[
+%\gamma^0 = \mqty(I & 0 \\ 0 & -I), \,\,\,  \gamma^i = \mqty(0 & \sigma_i \\ -\sigma_i & 0)
+%\]
+%where the elements are $2 \times 2$~matrices and the $\sigma$~are the Pauli matrices:
+%\[
+%\sigma^1 = \mqty(0 & 1 \\ 1 & 0), \,\,\,  \sigma^2 = \mqty(0 & -i \\ -i & 0), \,\,\,
+%\sigma^3 = \mqty(1 & 0 \\ 0 & -1)
+%\]
+%To be explicit we can write the full expansion of the Dirac equation:
+%\[
+%\begin{split}
+% i \left[
+%\left( \begin{array}{cccc}
+%1 & 0 & 0 &0 \\
+%0 & 1 & 0 &0 \\
+%0 & 0 & -1 &0 \\
+%0 & 0 & 0 & -1 \\
+%\end{array} \right ) \partial_0 +  
+%\left( \begin{array}{cccc}
+%0 & 0 & 0 &1 \\
+%0 & 0 & 1 &0 \\
+%0 & -1 & 0 &0 \\
+%-1 & 0 & 0 &0 \\
+%\end{array} \right ) \partial_1 + 
+% \left( \begin{array}{cccc}
+%0 & 0 & 0 &-i \\
+%0 & 0 &  i &0 \\
+%0 & i & 0 &0 \\
+%-i & 0 & 0 &0 \\
+%\end{array} \right ) \partial_2   +  \right. \\
+%\left. \left( \begin{array}{cccc}
+%0 & 0 & 1 &0 \\
+%0 & 0 & 0 &-1 \\
+%-1 & 0 & 0 &0 \\
+%0 & 1 & 0 &0 \\
+%\end{array} \right ) \partial_3 
+%\right] \left( \begin{array}{c}
+%\psi_1 \\
+%\psi_2 \\
+%\psi_3 \\
+%\psi_4 \\
+%\end{array} \right )  = m \left( \begin{array}{c}
+%\psi_1 \\
+%\psi_2 \\
+%\psi_3 \\
+%\psi_4 \\
+%\end{array} \right )
+%\end{split}
+%\]
+%\end{frame}
